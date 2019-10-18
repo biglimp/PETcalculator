@@ -434,9 +434,9 @@ class Ui(QtWidgets.QDialog):
                 np.savetxt(f_handle, poi_save, fmt=numformat)
                 f_handle.close()
             else:
-                self.lineEditTmrt.setText('%3.2f' % (Tmrt))
-                self.lineEditPET.setText('%3.2f' % (resultPET))
-                self.lineEditUTCI.setText('%3.2f' % (resultUTCI))
+                self.lineEditTmrt.setText('%3.1f' % (Tmrt))
+                self.lineEditPET.setText('%3.1f' % (resultPET))
+                self.lineEditUTCI.setText('%3.1f' % (resultUTCI))
 
 app = QtWidgets.QApplication(sys.argv)
 window = Ui()
